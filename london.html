@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<style>
+header {
+    background-color:#2C3539;
+    color: #B7CEEC;
+    text-align:center;
+    padding:5px;     
+}
+nav {
+    line-height:30px;
+    background-color: #504A4B;
+    height:950px;
+    width:100px;
+    float: left;
+    padding:5px;          
+}
+section {
+    width:350px;
+    float:left;
+    padding:30px;         
+}
+footer {
+    background-color:#504A4B;
+    color: #659EC7;
+    clear:both;
+    text-align:center;
+    padding:5px;         
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+<h1>City Gallery</h1>
+</header>
+
+<nav>
+<a href="london.html">London</a><br>
+<a href="Tokyo.html">Tokyo</a><br>
+<a href="NewYorkCity.html">New York City </a>
+</nav>
+
+<section>
+<h1>London</h1>
+<p>London is the capital city of England. It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants. </p>
+<p>London is the bigggest city in Brtain and Europe. London is in the southeast of England. Some famous landmarks are Big Ben and The London Eye. </p>
+</section>
+<aside>
+<img src="http://www.inetours.com/England/London/images/BgBn/Big_Ben_8583a.jpg" alt="london"/>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+<footer>
+&copy; Mr. Singer 2016
+</footer>
+
+</body>
+</html>
